@@ -74,7 +74,8 @@
             <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value='@bool/fb_advertiser_id_collection_enabled' />
             <activity android:name="com.facebook.FacebookActivity"
               android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-              android:label="@string/fb_app_name" />
+              android:label="@string/fb_app_name" 
+              android:exported="false" />
             <provider android:authorities="com.facebook.app.FacebookContentProvider$APP_ID"
               android:name="com.facebook.FacebookContentProvider"
               android:exported="true" />
